@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="/home/wahyu/Downloads/movie-catalogue/app/src/main/res/drawable/movie_logo.png" />
+        <ignore path="/home/wahyu/Downloads/movie-catalogue/app/src/main/res/drawable/movie_logo.png" />
+        <ignore path="/home/wahyu/Downloads/movie-catalogue/app/src/main/res/drawable/movie_logo.png" />
+    </issue>
+</lint>

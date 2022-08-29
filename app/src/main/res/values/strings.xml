@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MyMovieCatalogue</string>
+    <string name="title_activity_detail_movie">DetailMovie</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="year_release">Release Year</string>
+    <string name="description_movie">Movie Description</string>
+    <string name="view_cast">View Cast</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">TV Shows</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="share_text">Check latest movies and tv shows %s in MovieCatalogue</string>
+    <string name="director">Director</string>
+    <string name="splash_title">MovieCatalogue</string>
+    <string name="tagline">Tagline</string>
+    <string name="release_date">Release Date</string>
+    <string name="rating">Rating</string>
+    <string name="runtime">Runtime</string>
+    <string name="text_runtime">runtime</string>
+    <string name="image_splash">Splash logo</string>
+    <string name="menu_favorite">favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_undo">Undo Delete?</string>
+    <string name="message_ok">OK</string>
+    <string name="title_activity_detail_tv">DetailTV</string>
+    <string name="image_poster">Image Poster</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="tv_show_details">TV Show Details</string>
+    <string name="item_deleted">Item deleted</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="menu_favorite_dynamic">favorite_dynamic</string>
+    <string name="failure">Terjadi Kesalahan</string>
+    <string name="power_connected">Charging</string>
+    <string name="power_disconnected">Battery Mode</string>
+
+</resources>
