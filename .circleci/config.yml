@@ -9,7 +9,7 @@ executors:
           username: $DOCKER_HUB_USER
           password: $DOCKER_HUB_PASSWORD
 jobs:
-  ci-test-apk:
+  ci-test-app:
 
     executor: my-custom-executor
     steps:
@@ -56,4 +56,4 @@ jobs:
 workflows:
   my-custom-workflow:
     jobs:
-      - ci-test-apk
+      - ci-test-app
