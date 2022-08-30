@@ -53,6 +53,9 @@ android {
     hilt {
         enableExperimentalClasspathAggregation = true
     }
+    lintOptions {
+        abortOnError false
+    }
     dynamicFeatures = [':favorite']
 }
 
