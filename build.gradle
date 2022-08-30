@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = "1.5.0"
+    ext.kotlin_version = "1.7.10"
     ext.rxjava_version = "2.2.19"
     ext.rxandroid_version = "2.1.1"
     ext.lifecycle_version = "2.5.1"
@@ -45,7 +45,7 @@ task clean(type: Delete) {
 
 ext {
     room_version = "2.4.3"
-    coreVersion = '1.5.0'
+    coreVersion = '1.8.0'
     constraintLayoutVersion = '2.0.4'
     junitVersion = '4.13.2'
     junitExtversion = '1.1.3'
