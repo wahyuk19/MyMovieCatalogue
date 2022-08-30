@@ -8,6 +8,7 @@ apply from: '../shared_dependencies.gradle'
 
 android {
     compileSdkVersion 33
+    buildToolsVersion "33.0.3"
 
     defaultConfig {
         minSdkVersion 26
