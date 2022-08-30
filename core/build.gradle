@@ -22,17 +22,17 @@ android {
     }
 
     buildTypes {
-        debug{
-            buildConfigField ("String", "API_KEY", API_KEY)
-            buildConfigField ("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
-            buildConfigField ("String", "POSTER_URL", "\"https://image.tmdb.org/t/p/w200\"")
+        debug {
+            buildConfigField("String", "API_KEY", API_KEY)
+            buildConfigField("String", "BASE_URL", BASE_URL)
+            buildConfigField("String", "POSTER_URL", POSTER_URL)
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField ("String", "API_KEY", API_KEY)
-            buildConfigField ("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
-            buildConfigField ("String", "POSTER_URL", "\"https://image.tmdb.org/t/p/w200\"")
+            buildConfigField("String", "API_KEY", API_KEY)
+            buildConfigField("String", "BASE_URL", BASE_URL)
+            buildConfigField("String", "POSTER_URL", POSTER_URL)
         }
     }
     compileOptions {
