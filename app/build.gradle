@@ -50,9 +50,6 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
-    lintOptions {
-        checkReleaseBuilds false
-    }
     hilt {
         enableExperimentalClasspathAggregation = true
     }
