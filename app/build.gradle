@@ -25,11 +25,15 @@ android {
 
     buildTypes {
         debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("String", "API_KEY", API_KEY)
             buildConfigField("String", "BASE_URL", BASE_URL)
             buildConfigField("String", "POSTER_URL", POSTER_URL)
         }
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("String", "API_KEY", API_KEY)
             buildConfigField("String", "BASE_URL", BASE_URL)
             buildConfigField("String", "POSTER_URL", POSTER_URL)

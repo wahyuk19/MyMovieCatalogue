@@ -7,6 +7,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.CertificatePinner
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -20,10 +21,15 @@ class NetworkModule {
     @Provides
     fun provideOkHttpClient(): OkHttpClient{
         val loggingInterceptor = if(BuildConfig.DEBUG) { HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY) }else { HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.NONE) }
+        val hostname = "*.themoviedb.org"
+        val certificatePinner = CertificatePinner.Builder()
+            .add(hostname,"sha256/oD/WAoRPvbez1Y2dfYfuo4yujAcYHXdv1Ivb2v2MOKk=")
+            .build()
         return OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
             .connectTimeout(120,TimeUnit.SECONDS)
             .readTimeout(120,TimeUnit.SECONDS)
+            .certificatePinner(certificatePinner)
             .build()
     }
 
